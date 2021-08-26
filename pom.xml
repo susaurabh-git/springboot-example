@@ -28,7 +28,8 @@
 	</dependencyManagement>
 
 	<modules>
-		<module>rest-integration-test</module>
+		<module>rest-integration</module>
+
 	</modules>
 
 	<build>
