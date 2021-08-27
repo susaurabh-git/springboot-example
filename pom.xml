@@ -30,7 +30,7 @@
 	<modules>
 		<module>rest-integration</module>
 		<module>rest-crud</module>
-
+		<module>rest-crud-junit5</module>
 	</modules>
 
 	<build>
