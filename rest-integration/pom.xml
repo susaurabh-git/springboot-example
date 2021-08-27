@@ -9,8 +9,8 @@
 		<artifactId>springboot-example</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>rest-integration-test</artifactId>
-	<name>rest-integration-test</name>
+	<artifactId>rest-integration</artifactId>
+	<name>rest-integration</name>
 	<packaging>jar</packaging>
 	
 	<dependencies>
