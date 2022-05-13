@@ -1,6 +1,6 @@
 # springboot-crud
 
-This is sample Springboot implementation.
+This is sample Springboot CRUD implementation 
 
 ## Pre-requisites
 - java 11+
