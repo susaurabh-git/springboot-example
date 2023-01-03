@@ -1,6 +1,6 @@
 package us.innodea.rest.redis.service;
 
-import lombok.extern.slf4j.Slf4j;
+// import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
@@ -11,19 +11,19 @@ import us.innodea.rest.redis.model.CreateUserRequest;
 import us.innodea.rest.redis.model.User;
 
 import java.util.*;
-@Slf4j
+
+// @Slf4j
 @Service
 @CacheConfig(cacheNames = "userCache")
 public class UserService {
 
   @CachePut(key = "#result.getId()", unless = "#result == null")
   public User createUser(CreateUserRequest request) {
-    User newUser =
-        User.builder()
-            .id(UUID.randomUUID().toString())
-            .firstName(request.getFirstName())
-            .lastName(request.getLastName())
-            .build();
+    User newUser = User.builder()
+        .id(UUID.randomUUID().toString())
+        .firstName(request.getFirstName())
+        .lastName(request.getLastName())
+        .build();
     return newUser;
   }
 
@@ -33,18 +33,17 @@ public class UserService {
   }
 
   @CacheEvict
-  public  void deleteUser(String id) {
+  public void deleteUser(String id) {
     // No implementation required.
   }
 
   @CachePut(key = "#result.getId().getId()", unless = "#result == null")
   public User updateUser(CreateUserRequest request) {
-    User updatedUser =
-        User.builder()
-            .id(request.getId())
-            .firstName(request.getFirstName())
-            .lastName(request.getLastName())
-            .build();
+    User updatedUser = User.builder()
+        .id(request.getId())
+        .firstName(request.getFirstName())
+        .lastName(request.getLastName())
+        .build();
     return updatedUser;
   }
 

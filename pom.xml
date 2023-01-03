@@ -10,8 +10,8 @@
 		<bootVersion>2.2.6.RELEASE</bootVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<java.version>11</java.version>
 		<lombok.version>1.18.22</lombok.version>
 	</properties>
@@ -32,6 +32,7 @@
 		<module>rest-crud</module>
 		<module>rest-crud-junit5</module>
 		<module>rest-redis</module>
+		<module>rest-yaml</module>
 	</modules>
 
 	<build>

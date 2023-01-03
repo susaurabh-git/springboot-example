@@ -9,9 +9,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>us.innodea</groupId>
-    <artifactId>rest-crud</artifactId>
+    <artifactId>rest-yaml</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    
+
     <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 
