@@ -12,10 +12,6 @@
     <artifactId>rest-crud-junit5</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
     <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -24,7 +20,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

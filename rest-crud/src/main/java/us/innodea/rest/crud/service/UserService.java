@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import us.innodea.rest.crud.model.CreateUserRequest;
 import us.innodea.rest.crud.model.User;
 
-
 import java.util.*;
 
 @Slf4j
@@ -15,12 +14,11 @@ public class UserService {
   private final Map<String, User> users = dummyUserRepo();
 
   public User createUser(CreateUserRequest request) {
-    User newUser =
-        User.builder()
-            .id(UUID.randomUUID().toString())
-            .firstName(request.getFirstName())
-            .lastName(request.getLastName())
-            .build();
+    User newUser = User.builder()
+        .id(UUID.randomUUID().toString())
+        .firstName(request.getFirstName())
+        .lastName(request.getLastName())
+        .build();
     users.put(newUser.getId(), newUser);
     return newUser;
   }
@@ -38,14 +36,12 @@ public class UserService {
   }
 
   public User updateUser(CreateUserRequest request) {
-    User updatedUser =
-        User.builder()
-            .id(request.getId())
-            .firstName(request.getFirstName())
-            .lastName(request.getLastName())
-            .build();
-    users.put(updatedUser.getId(), updatedUser);
-    return updatedUser;
+    User user = getUser(request.getId());
+    if (user != null) {
+      user.setFirstName(request.getFirstName());
+      user.setLastName(request.getLastName());
+    }
+    return user;
   }
 
   private Map<String, User> dummyUserRepo() {

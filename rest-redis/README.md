@@ -1,9 +1,9 @@
 # rest-redis
-This is springboot REST application which will use redis cache to Retrieve, Create, Update and Delete User object.
+This is Springboot reference project for REST application which will use redis cache to Retrieve, Create, Update and Delete User object.
 
 ## Pre-requisites
-- Java 11+
-- Maven 3.6+
+- java 21+
+- maven 3.9.6+
 
 ## Run Redis in local 
 - Download and install "Docker Desktop" from docker https://www.docker.com (If not already installed)

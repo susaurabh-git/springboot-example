@@ -16,7 +16,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import java.time.Duration;
 
 /***
- * NOTE: This file is need only if we want to use template otherwise spring Autoconfiguration will take care of creating
+ * NOTE: This file is needed only if we want to use template otherwise spring Autoconfiguration will take care of creating
  * Redis bean and its configuration, we just need to provide following properties in Application.yml file
  * spring.redis.host
  * spring.redis.port

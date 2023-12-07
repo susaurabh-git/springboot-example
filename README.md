@@ -1,11 +1,11 @@
 # springboot-examples
 
-This is sample Springboot examples. Each module inside this repo are independent application, they are focused on 
+This is Springboot reference project. Each module inside this repo are independent application, they are focused on 
 a single feature of springboot which can be referred by developers in the real enterprise application.
 
 ## Pre-requisites
-- java 11+
-- maven 3.6+
+- java 21+
+- maven 3.9.6+
 
 ## Build
 Run following command to build and package

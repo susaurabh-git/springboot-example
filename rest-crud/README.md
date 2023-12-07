@@ -1,10 +1,10 @@
 # springboot-crud
 
-This is sample Springboot CRUD implementation 
+This is Springboot reference project for CRUD implementation 
 
 ## Pre-requisites
-- java 11+
-- maven 3.6+
+- java 21+
+- maven 3.9.6+
 
 ## Build
 Run following command to build and package
