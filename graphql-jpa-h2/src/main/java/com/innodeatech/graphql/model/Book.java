@@ -1,4 +1,4 @@
-package com.innodeatech.graphql;
+package com.innodeatech.graphql.model;
 
 import java.util.Arrays;
 import java.util.List;
